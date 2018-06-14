@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>homework-4-js</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/mochajs/mocha/2.2.5/mocha.css">
+</head>
+<body>
+	<div id="mocha"></div>
+	
+	<script src="https://cdn.rawgit.com/mochajs/mocha/2.2.5/mocha.js"></script>
+	<script src="http://chaijs.com/chai.js"></script>
+	<script src="http://sinonjs.org/releases/sinon-6.0.0.js"></script>
+	<script>
+		const assert = chai.assert;
+		const expect = chai.expect;
+	</script>
+	<script>
+		mocha.setup('bdd');
+	</script>
+	<script src="src/scripts/homework-4-js.js"></script>
+	<script src="src/tests/test.js"></script>
+	<script>
+		mocha.run();
+	</script>
+</body>
+</html>
